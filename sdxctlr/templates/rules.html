@@ -24,18 +24,18 @@
 
                 <!-- Table Body -->
                 <tbody>
-                    {% for rule in rules %}{% if rule[1]['l2tunnel'] %}
+                    {% for rule in rules %}{% if rule[1]['L2Tunnel'] %}
                     <tr>
                         <td><a href="/rule/hash/{{ rule[0]}}">{{ rule[0]}}</a></td>
-                        <td>{{ rule[1]['l2tunnel']['starttime'] }}</td>
-                        <td>{{ rule[1]['l2tunnel']['endtime'] }}</td>
-                        <td>{{ rule[1]['l2tunnel']['srcswitch'] }}</td>
-                        <td>{{ rule[1]['l2tunnel']['dstswitch'] }}</td>
-                        <td>{{ rule[1]['l2tunnel']['srcport'] }}</td>
-                        <td>{{ rule[1]['l2tunnel']['dstport'] }}</td>
-                        <td>{{ rule[1]['l2tunnel']['srcvlan'] }}</td>
-                        <td>{{ rule[1]['l2tunnel']['dstvlan'] }}</td>
-                        <td>{{ rule[1]['l2tunnel']['bandwidth'] }}</td>
+                        <td>{{ rule[1]['L2Tunnel']['starttime'] }}</td>
+                        <td>{{ rule[1]['L2Tunnel']['endtime'] }}</td>
+                        <td>{{ rule[1]['L2Tunnel']['srcswitch'] }}</td>
+                        <td>{{ rule[1]['L2Tunnel']['dstswitch'] }}</td>
+                        <td>{{ rule[1]['L2Tunnel']['srcport'] }}</td>
+                        <td>{{ rule[1]['L2Tunnel']['dstport'] }}</td>
+                        <td>{{ rule[1]['L2Tunnel']['srcvlan'] }}</td>
+                        <td>{{ rule[1]['L2Tunnel']['dstvlan'] }}</td>
+                        <td>{{ rule[1]['L2Tunnel']['bandwidth'] }}</td>
                         <td>{{ rule[3] }}</td>
                         <td><form action="/rule/hash/{{ rule[0] }}" method="POST"><button type="submit" class="btn btn-danger btn-lg">[x]</button></form></td>
                     </tr>
@@ -62,13 +62,13 @@
 
                 <!-- Table Body -->
                 <tbody>
-                    {% for rule in rules %}{% if rule[1]['endpointconnection'] %}
+                    {% for rule in rules %}{% if rule[1]['EndpointConnection'] %}
                     <tr>
                         <td><a href="/rule/hash/{{ rule[0]}}">{{ rule[0]}}</a></td>
-                        <td>{{ rule[1]['endpointconnection']['deadline'] }}</td>
-                        <td>{{ rule[1]['endpointconnection']['srcendpoint'] }}</td>
-                        <td>{{ rule[1]['endpointconnection']['dstendpoint'] }}</td>
-                        <td>{{ rule[1]['endpointconnection']['dataquantity'] }}</td>
+                        <td>{{ rule[1]['EndpointConnection']['deadline'] }}</td>
+                        <td>{{ rule[1]['EndpointConnection']['srcendpoint'] }}</td>
+                        <td>{{ rule[1]['EndpointConnection']['dstendpoint'] }}</td>
+                        <td>{{ rule[1]['EndpointConnection']['dataquantity'] }}</td>
                         <td>{{ rule[3] }}</td>
                         <td><form action="/rule/hash/{{ rule[0] }}" method="POST"><button type="submit" class="btn btn-danger btn-lg">[x]</button></form></td>
                     </tr>
