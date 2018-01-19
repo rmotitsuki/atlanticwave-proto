@@ -282,7 +282,7 @@ class RyuTranslateInterface(app_manager.RyuApp):
                 self.install_rule(datapath, event)
             elif event_type == ICX_REMOVE:
                 self.remove_rule(datapath, event)
-                
+            sleep(0.1)
 
             # FIXME - There may need to be more options here. This is just a start.
 
