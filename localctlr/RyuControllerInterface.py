@@ -167,6 +167,8 @@ class RyuControllerInterface(ControllerInterface):
 
 
                 #elif?
+            
+            sleep(0.1)
 
             # Loop through writable
             for entry in writable:
