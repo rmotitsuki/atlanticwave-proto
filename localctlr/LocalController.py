@@ -114,6 +114,8 @@ class LocalController(SingletonMixin):
             for entry in exceptional:
                 # FIXME: Handle connection failures
                 pass
+            
+            sleep(0.1)
         
 
         
