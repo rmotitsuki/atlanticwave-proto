@@ -6,6 +6,7 @@ import logging
 import threading
 import sys
 import json
+import time
 
 from lib.Singleton import SingletonMixin
 from lib.Connection import select as cxnselect
@@ -115,7 +116,7 @@ class LocalController(SingletonMixin):
                 # FIXME: Handle connection failures
                 pass
             
-            sleep(0.1)
+            time.sleep(0.1)
         
 
         
