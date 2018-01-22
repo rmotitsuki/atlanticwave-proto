@@ -16,6 +16,7 @@ import logging
 import subprocess
 import sys
 import os
+import time
 
 class RyuControllerInterface(ControllerInterface):
     ''' This is a particular implementation of the ControllerInterface class
@@ -168,7 +169,7 @@ class RyuControllerInterface(ControllerInterface):
 
                 #elif?
             
-            sleep(0.1)
+            time.sleep(0.1)
 
             # Loop through writable
             for entry in writable:
