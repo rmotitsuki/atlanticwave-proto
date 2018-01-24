@@ -390,7 +390,18 @@
             .selectAll("line")
             .data(graph.links)
             .enter().append("line")
-              .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+              .attr("stroke", "black")
+              .attr("stroke-width", function(d) {
+                if (d.value > 1000000000) {
+                    return 10;
+                else if (d.value > 100000000) {
+                    return 5;
+                else if (d.value > 10000000) {
+                    return 2;
+                } else {
+                  return Math.sqrt(d.value);
+                }
+            });
 
           var node = svg.append("g")
               .attr("class", "nodes")
